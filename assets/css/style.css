@@ -1,0 +1,171 @@
+/*Colors*/
+
+:root {
+  --background: #aaa0a0;
+  --btn: #475089;
+  --mainclr: #8e8268;
+  --accent2: #4c52c2;
+  --text: #474853;
+  --box: #ffffff;
+}
+  
+  /*Global Settings */
+  
+  * {
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 20px;
+  }
+  
+  h1 {
+    font-size: 50px;
+    color: var(--box);
+    align-content: center;
+    justify-content: center;
+    padding: 0 20px 0 20px;
+    margin: auto;
+  }
+
+  h2 {
+    font-size: 25px;
+    color: var(--box);
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 10px 20px 10px 20px;
+    font-weight: bolder;
+  }
+  
+  h3 {
+    font-size: 18px;
+    color: var(--box);
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 10px 20px 10px 0;
+    font-weight: bolder;
+  }
+  
+  p {
+    color: var(--text);
+    padding: 0 0 10px 0;
+    font-size: 25px;
+  }
+  
+  ul li {
+    color: var(--box);
+    font-size: large;
+    list-style: none;
+    text-align: center;
+    margin: 0 60px 0 0;
+  }
+  
+ 
+  @media screen and (max-width: 840px) {
+    .shrink-wrap {
+        flex-direction: column;
+    }
+  }
+
+
+  #locationButton {
+    background-color: var(--accent2);
+    border-style: none;
+    padding: 20px;
+    justify-self: center;
+    align-self: center;
+    margin: 10px 0 0 0;
+    color: var(--box);
+    display: flex;
+    font-size: 25px;
+  }
+
+  .flexBody {
+    display: flex;
+    background-color: var(--background);
+    flex-direction: column;
+  }
+
+  header {
+    display: flex;
+  }
+
+  .flexHeader {
+    background-color: var(--accent2);
+    width: 100%;
+    margin: auto;
+    flex-direction: row;
+  }
+
+   .pageSplit {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .locationContainer {
+    flex-direction: row;
+    flex: 1;
+    align-content:center;
+    justify-content: flex-start;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--text);
+  }
+
+  #weatherForecast {
+    flex-direction: row;
+    flex: 5;
+    align-content: right;
+    justify-self: flex-end;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--accent2);
+    margin: 0 0 0 5px;
+
+  }
+
+  .dailyWeather {
+    flex-direction: column;
+    justify-items: center;
+    display: flex;
+    color: var(--box);
+  }
+
+  #forecast5day {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+  }
+
+  #forecast5day div {
+    color: var(--box);
+    background-color: #ffffff;
+    margin: 20px;
+  }
+
+  #typedCity {
+    color: var(--box);
+    padding: 0 0 20px 20px;
+    font-size: xx-large;
+  }
+
+  #currentWeatherBox {
+    background-color: var(--box);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-size: xx-large;
+    margin: 20px 0 0 20;
+    
+  }
+
+  #currentWeatherBox img {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+
+  }
+
+  #currentWeatherBox * {
+    text-align: center;
+  }
